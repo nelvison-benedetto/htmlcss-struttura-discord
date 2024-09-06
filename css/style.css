@@ -28,23 +28,14 @@ html, body {
     display:flex;
     justify-content: center;
     align-items: center;
-}
-
-**region debug**
-.debug {
-    border: 1px dashed;
-}
-
-.debug header{
-    background-color: var(--azure);
     height:7.3vh;
+    background-color: var(--azure);
 }
 
 #header_div{
     display: flex;
     justify-content: space-between;
-    width: 100vh;
-    height: 4vh;
+    width: 100vw;  /* stretch div width to 100% of web page */
     background-color: var(--orange);
 }
 
@@ -52,22 +43,36 @@ html, body {
     display:flex;
     flex-grow: 1;
     align-items: center;
-    padding: 0 0.5rem;
+    padding: 0 1rem;
     border: 2px dashed;
 }
 
 #header_logo{
-    display: flex;
     justify-content: start;
 }
 #header_link{
-    display: flex;
     justify-content: center;
 }
 #header_login{
-    display: flex;
     justify-content: end;
 }
 
+/*region main*/ 
 
-
+.flex-main{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height:90.7vh;
+    background-color: #ee82ee;
+}
+#main_div{
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+    background-color: #228b22;
+}
+#main_div section{
+    align-items: center;
+    border: 2px dashed;
+}
