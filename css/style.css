@@ -1,0 +1,43 @@
+:root{
+    --azure: #add8e6;
+    --orange: #daa520;
+    --blue-dark: #00008b;
+    --rose-dark: #ee82ee;
+    --white: #ffffff;
+    --blue-light: #1e90ff;
+    --gray: #d3d3d3;
+    --rose-light: #ffc0cb;
+    --green-dark: #228b22;
+    --black: #23272a;
+    --rose-red: #f08080;
+    --green-blue: #20b2aa;
+    --green-light: #7fffd4;
+}
+
+
+*{  /*{   reset globale */
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body {  
+    height: 100vh;
+}
+.flex-container{
+    display:flex;
+    height: 100vh; /*BIG AS BROWSER WINDOW, %1 is 1% of parent height(SET HEIGHT 100%!!)*/
+    /* use CSS SELECTORS */
+}
+
+**region debug**
+.debug {
+    border: 1px dashed;
+}
+
+.debug header{
+    background-color: aqua;
+    height:6vh;
+}
+
+
+
