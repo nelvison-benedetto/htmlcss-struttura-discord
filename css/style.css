@@ -14,19 +14,20 @@
     --green-light: #7fffd4;
 }
 
-
 *{  /*{   reset globale */
     padding:0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Franklin Gothic', 'Arial Narrow', Arial, sans-serif;
 }
 html, body {  
-    height: 100vh;
+    height: 100vh; /*BIG AS BROWSER WINDOW, %1 is 1% of parent height(SET HEIGHT 100%!!)*/
+    /* use CSS SELECTORS */
 }
 .flex-container{
     display:flex;
-    height: 100vh; /*BIG AS BROWSER WINDOW, %1 is 1% of parent height(SET HEIGHT 100%!!)*/
-    /* use CSS SELECTORS */
+    justify-content: center;
+    align-items: center;
 }
 
 **region debug**
@@ -35,8 +36,37 @@ html, body {
 }
 
 .debug header{
-    background-color: aqua;
-    height:6vh;
+    background-color: var(--azure);
+    height:7.3vh;
+}
+
+#header_div{
+    display: flex;
+    justify-content: space-between;
+    width: 100vh;
+    height: 4vh;
+    background-color: var(--orange);
+}
+
+#header_div section{
+    display:flex;
+    flex-grow: 1;
+    align-items: center;
+    padding: 0 0.5rem;
+    border: 2px dashed;
+}
+
+#header_logo{
+    display: flex;
+    justify-content: start;
+}
+#header_link{
+    display: flex;
+    justify-content: center;
+}
+#header_login{
+    display: flex;
+    justify-content: end;
 }
 
 
