@@ -24,7 +24,10 @@ html, body {
     height: 100vh; /*BIG AS BROWSER WINDOW, %1 is 1% of parent height(SET HEIGHT 100%!!)*/
     /* use CSS SELECTORS */
 }
-.flex-container{
+
+
+/* HEADER */
+.flex-header{
     display:flex;
     justify-content: center;
     align-items: center;
@@ -35,7 +38,7 @@ html, body {
 #header_div{
     display: flex;
     justify-content: space-between;
-    width: 60vw;  /* stretch div width to 100% of web page */
+    width: 50%;  /* stretch div width to 100% of web page */
     background-color: var(--orange);
 }
 
@@ -44,7 +47,7 @@ html, body {
     flex-grow: 1;
     align-items: center;
     padding: 0 1rem;
-    border: 2px dashed;
+    border: 1px dashed;
 }
 
 #header_logo{
@@ -57,15 +60,39 @@ html, body {
     justify-content: end;
 }
 
+
+/* MAIN */
+#up_container_height{
+    height: 65%;
+}
+#low_container_height{
+    height: 35%;
+}
+
+.upper_container, .lower_container {
+    width: 100%;
+   /*  height: 50%; */ /* Dividi in due sezioni uguali */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 /*region main*/ 
 .flex-main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 90.7vh; /* Resto dello spazio */
+    height: 90vh; /* Resto dello spazio */
     background-color: var(--black);
 }
 .box{
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.big_box{
     display: flex;
     flex-grow: 1;
     justify-content: center;
@@ -78,8 +105,7 @@ html, body {
     background-color: var(--blue-dark);
 }
 .main_blue .inner_box{
-    width: 50%;
-    height: 70%;
+    width: 56%;
     background-color: var(--rose-dark);
     border: 1px dashed black;
 }
@@ -89,7 +115,7 @@ html, body {
     background-color: var(--white);
 }
 .inner_box{
-    width: 70%;
+    width: 50%;
     height: 70%;
     border: 1px dashed black;
     display: flex;
@@ -116,10 +142,21 @@ html, body {
 .main_green{
     background-color: var(--azure);
 }
-.inner_box_big{
-    width: 70%;
-    height: 80%;
-    border: 1px dashed black;
-    display: flex;
-    flex-direction: row-reverse;
+
+.main_green .inner_box{
+    background-color: var(--green-dark);
 }
+.big_box.main_green {
+    flex-grow: 6; 
+}
+.big_box.main_black {
+    flex-grow: 4; 
+}
+.main_black .inner_box{
+    background-color: var(--rose-red);
+}
+
+
+
+
+
