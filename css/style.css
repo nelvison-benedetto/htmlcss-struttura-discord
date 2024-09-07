@@ -65,7 +65,6 @@ html, body {
     height: 90.7vh; /* Resto dello spazio */
     background-color: var(--black);
 }
-
 .box{
     display: flex;
     flex-grow: 1;
@@ -74,6 +73,7 @@ html, body {
     width: 100%;
 }
 
+/* BOX BG DARK BLUE */
 .main_blue {
     background-color: var(--blue-dark);
 }
@@ -82,34 +82,44 @@ html, body {
     height: 70%;
     background-color: var(--rose-dark);
     border: 1px dashed black;
-   /*  margin: 10px; */ /* Distanza dai lati */
 }
 
-
+/* BOX BG WHITE */
 .main_white{
     background-color: var(--white);
 }
-.main_white .inner_box{
+.inner_box{
     width: 70%;
     height: 70%;
-    background-color: var(--rose-dark);
     border: 1px dashed black;
     display: flex;
     flex-direction: row-reverse;
 }
-.main_white .inner_box .inner_box_rose{
+.inner_box_rose{
     background-color: var(--rose-light);
     width: 40%; 
     height: 100%;
+    border: 1px dashed black;
+}
+.inner_box_blue-light{
+    background-color: #1e90ff;
+    height: 100%;
+    width: 60%;
+    border: 1px dashed black;
 }
 
-
-
+/* BOX BG GRAY */
 .main_gray{
     background-color: var(--gray);
 }
 
 .main_green{
-    background-color: var(--green);
+    background-color: var(--azure);
 }
-
+.inner_box_big{
+    width: 70%;
+    height: 80%;
+    border: 1px dashed black;
+    display: flex;
+    flex-direction: row-reverse;
+}
