@@ -92,13 +92,6 @@ html, body {
     align-items: center;
     width: 100%;
 }
-.big_box{
-    display: flex;
-    flex-grow: 1;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
 
 /* BOX BG DARK BLUE */
 .main_blue {
@@ -146,17 +139,27 @@ html, body {
 .main_green .inner_box{
     background-color: var(--green-dark);
 }
-.big_box.main_green {
+.box.main_green {
     flex-grow: 6; 
 }
-.big_box.main_black {
+.box.main_black {
     flex-grow: 4; 
 }
+
+
 .main_black .inner_box{
     background-color: var(--rose-red);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 70%;
 }
 
-
-
+.inner_box .inner_box_green-light {
+    background-color: #daa520;
+    width: 100%;
+    flex-grow: 1; /* Fai sì che ogni div cresca uniformemente */
+    border: 2px solid black;
+}
 
 
