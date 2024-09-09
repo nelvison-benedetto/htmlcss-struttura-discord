@@ -21,9 +21,23 @@
     font-family: 'Franklin Gothic', 'Arial Narrow', Arial, sans-serif;
 }
 html, body {  
-    height: 100vh; /*BIG AS BROWSER WINDOW, %1 is 1% of parent height(SET HEIGHT 100%!!)*/
+    height: 100%; /*BIG AS BROWSER WINDOW, %1 is 1% of parent height(SET HEIGHT 100%!!)*/
     /* use CSS SELECTORS */
 }
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header, footer {
+    flex-shrink: 0; /* Non si restringono */
+}
+main {
+    flex-grow: 1; /* Occupa tutto lo spazio rimanente */
+    display: flex;
+    flex-direction: column;
+}
+
 
 
 /* HEADER */
@@ -69,6 +83,7 @@ html, body {
     height: 35%;
 }
 
+
 .upper_container, .lower_container {
     width: 100%;
    /*  height: 50%; */ /* Dividi in due sezioni uguali */
@@ -82,7 +97,6 @@ html, body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 90vh; /* Resto dello spazio */
     background-color: var(--black);
 }
 .box{
@@ -150,16 +164,37 @@ html, body {
 .main_black .inner_box{
     background-color: var(--rose-red);
     display: flex;
-    justify-content: space-between;
     flex-direction: column;
-    height: 70%;
+    justify-content: space-between;
 }
 
-.inner_box .inner_box_green-light {
-    background-color: #daa520;
-    width: 100%;
-    flex-grow: 1; /* Fai sì che ogni div cresca uniformemente */
-    border: 2px solid black;
+/* STILL NOT WORKING! */
+.inner_box .inner_box_green-light { 
+    background-color: var(--green-light);
+    flex-grow: 1;
 }
 
 
+/* FOOTER */
+.flex-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--black);
+    height: 7vh; /* Altezza fissa per il footer */
+}
+
+.main_acquamarine .inner_box{
+    background-color: var(--green-light);
+    display: flex;
+    justify-content: space-between;
+    border: none;
+}
+
+.main_acquamarine .inner_box div{
+    display:flex;
+    flex-grow: 1;
+    align-items: center;
+    padding: 0 1rem;
+    border: 1px dashed;
+}
